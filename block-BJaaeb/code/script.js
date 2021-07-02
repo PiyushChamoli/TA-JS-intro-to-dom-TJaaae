@@ -51,6 +51,22 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 </ul>
 */
 
+function createTodoList(data = []){
+
+  let html = `<ul>
+  ${data.map((ele) => `<li>
+    <p>${ele.name}</p>
+    <input type="checkbox" ${ele.isDone ? "checked" : ""} name="" id="">
+    <span>X</span>
+  </li>`
+  )
+}
+  </ul>`
+
+    return html
+
+}
+
 // Your code goes here
 
 // TEST
