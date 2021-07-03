@@ -74,12 +74,30 @@ body {
 }
 
 .flex-25 {
-    flex: 0 1 25%;
+    flex: 0 1 30%;
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
     padding: 2rem;
     margin: 0 auto;
+}
+
+img {
+    max-width: 10rem;
+}
+
+li {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.7rem 0;
 }

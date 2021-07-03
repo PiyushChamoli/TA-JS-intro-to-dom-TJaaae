@@ -122,16 +122,25 @@ let ul = document.querySelector('ul');
 allBooks.books.forEach((elm) => {
     let li = document.createElement('li');
     let img = document.createElement('img');
-    let h2 = document.createElement('h2');
-    let p = document.createElement('p');
-    let btn = document.createElement('button');
-
     img.src = elm.image;
-    h2 = elm.title;
-    p = elm.author;
+    img.alt = elm.title;
 
-    
+    let h2 = document.createElement('h2');
+    h2.innerText = elm.title;
 
+    let p = document.createElement('p');
+    p.innerText = 'Author:';
+
+    let span = document.createElement('span');
+    span.innerText = elm.author;
+
+    let btn = document.createElement('button');
+    btn.innerText = 'Buy Now';
+
+    li.classList.add('flex-25');
+    p.append(span);
     li.append(img,h2,p);
     ul.append(li);
 });
+
+
